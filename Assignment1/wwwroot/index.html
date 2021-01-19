@@ -1,0 +1,62 @@
+﻿<!-- Annika Roberts
+    Section 003
+    Group 10
+    Assignment 1
+    01/16/2020
+    Build an ASP.NET Web App using the same structure as in the "Building First Web App" series of videos. (i.e. Non-MVC)
+
+    Include:
+
+    Title
+    Header that lists your preferred name
+    A picture of yourself doing something you enjoy
+    A paragraph on what you hope to get out of this IS 413 class
+    A list of the Top #3 jobs you are most interested in pursuing when you graduate
+    A "Grade Calculator" form that takes as input a percentage of each grade category listed in the syllabus
+    An icon for the website (#notcoveredinthevideos)
+
+    Build a JavaScript program that calculates and displays both a final percentage and a letter grade using the
+    "Grade Calculator" form entries based on the weights listed in the syllabus.
+    -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Annika Roberts</title>
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <link rel="icon" href="https://previews.123rf.com/images/urfandadashov/urfandadashov1808/urfandadashov180810004/106759218-ocean-icon-vector-isolated-on-white-background-ocean-transparent-sign-line-or-linear-design-elements.jpg" type="image/x-icon">
+</head>
+<body>
+    <!-- all information included in the instructions -->
+    <h1>Annika Roberts</h1>
+    <h2>Something I enjoy:</h2>
+    <img src="img/hiking.jpg" width="600" height="450" />
+    <p>I am looking forward to this class because I believe it will help me develop a lot of skills I don't have yet, or have not yet "mastered". I am looking forward to learning about a variety of topics, and I think this class will really push me out of my comfort zone. I have enjoyed Professor Hilton's classes so far, so I have high expectations for IS 413! </p>
+    <h3>Top 3 Jobs (A Tentative List):</h3>
+    <ul class="list">
+        <li>Database (SQL)</li>
+        <li>Consulting</li>
+        <li>Data Science</li>
+    </ul>
+    <form>
+        <!-- Form collecting the grade in each category -->
+        <label>Assignments (50%):</label>
+        <input id="assignments" type="number" max=100 />
+        <br />
+        <label>Group Projects (10%):</label>
+        <input id="group" type="number" max=100 />
+        <br />
+        <label>Quizzes (10%):</label>
+        <input id="quizzes" type="number" max=100 />
+        <br />
+        <label>Exams (20%):</label>
+        <input id="exams" type="number" max=100 />
+        <br />
+        <label>Intex (10%):</label>
+        <input id="intex" type="number" max=100 />
+        <br />
+        <input type="button" value="What is your final grade?" onclick="CalcFinalGrade()" />
+    </form>
+    <script src="js/JavaScript.js"></script>
+</body>
+</html>
